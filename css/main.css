@@ -456,6 +456,7 @@ div#search input:focus{
 
 
 
+
 .img{
     background:url("../images/bl.jpg");
    background-repeat: no-repeat;
@@ -489,13 +490,19 @@ ul{
       padding: 0px 0px;
 }
 .cv li{    
-    background: white;
+    /*background: white;*/
     display: inline;
     float: left;
+    /*border: 1px white solid;*/
     margin-bottom: 82px; 
+        height: auto;
 }
 .m1, .m2{
 margin-right: 25px;
+}
+.m0{
+    width: 166px;
+text-align: center;
 }
 .cv .i1 i{
     background: url("../images/i1.png");
@@ -534,18 +541,12 @@ height: 60px;
     margin: 38px 56px; 
          margin-bottom: 16px;
     float: left;
+     border: 2px solid black;
 }
 .clear{
     clear: both;
 }
-.cv li p{
-    text-align: center;
-    font-weight: 400;
-    line-height: 20px;
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 50px;
-}
+
 .buttonc p{
    margin-top: 47px; 
         padding: 26px;             
@@ -555,7 +556,9 @@ height: 60px;
  float: left;
 }
 .buttonc1 p{
+    text-align: center;
   margin-top: 47px; 
+  width: 125px;
         padding: 26px;     
     margin-right: 12px; 
     background: #1c1c1c;
@@ -598,6 +601,48 @@ o{
     line-height: 100px;
     font-size: 40px; 
 }
+/*li:hover{
+    margin-bottom: 50px;
+}*/
+li img{
+    /*border: 1px solid;*/
+    padding: 50px;   
+}
+li{
+    height: 200px;
+}
+
+.img{
+    position: relative;
+}
+#animate {
+  position: absolute;
+  /*overflow: hidden;*/
+}
+
+.cv li {
+    position: relative;  
+}
+
+.cv li p{
+     position: absolute;
+    bottom: 52px;
+    /*margin-left: auto;
+margin-right: auto;*/
+left: 0;
+right: 0;
+    text-align: center;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 20px;
+    color: #333;
+    margin-top: 13px;
+}
+
+ul li{
+    margin-top: 350px;
+}
+
 /*---------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------*/
 
@@ -730,13 +775,6 @@ o{
     overflow: hidden;
 
 }
-.featuredWork .ourteam .team img{
-    filter: grayscale(0%);
-    opacity: 1;
-    margin-right: 20px;
-    
-}
-
 .featuredWork .aboutus{
     margin-top: 30px;
 }
@@ -747,18 +785,7 @@ o{
 .featuredWork .aboutus .points{
     margin: 40px 0;
 }
-.featuredWork .aboutus .points i{
-    padding-right: 15px;
-    cursor: pointer;
-    font-size: 20px;
-    
-}
-.featuredWork .aboutus .points i:first-child{
-    background: black;
-    border-radius: 100%;
-    width: 5px;
-    margin-right: 15px;
-}
+
 .featuredWork .aboutus .contenttext p{
     font-weight: 300;
     line-height: 38px;
@@ -785,9 +812,14 @@ o{
 }
 .featuredWork .portfolio .photos .photofirst{
     margin-right: 20px;
+    height: 400px;
+}
+.featuredWork .portfolio .photos .photofirst{
+    height: 400px;
 }
 .featuredWork .portfolio .photos .photothird{
     margin-left: 20px;
+    height: 400px;
 }
 
 .featuredWork .portfolio .photos a{
@@ -1040,5 +1072,41 @@ o{
         width: 640px;
     }
 }
+/*deyisilib Isa*/
 
+#services {
+    height: 260px;
+    background-color: #fff;
+    position: relative;
+    bottom: 1px;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+#load{
+  width:100%;
+  height:100%;
+  position:fixed;   
+  background:url("http://demo.evatheme.com/html/white/image_slider/images/preloader.gif") no-repeat center center rgba(0,0,0,0);
+}
+/*deyisilib*/
 

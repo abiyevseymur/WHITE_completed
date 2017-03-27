@@ -4,17 +4,17 @@
     margin: 0 auto;
 }
 .featuredWork .gallery{
-    width: 2925px;
+    width: 7925px;
     position: relative;
-
+    right: 0;    
 }
 
 .featuredWork .gallery .pic{
+    transition: 0.3s ease-in-out;
     background-size: 295.5px;
     width: 292.5px;
     height: 222px;
     margin-bottom: 50px;
-    transition: 0.3s ease-in-out;
     position: relative;
 }
 .featuredWork .gallery .pic:hover{
@@ -23,30 +23,165 @@
 .featuredWork .gallery .pic .layot{
     background: transparent;
     height: 222px;
+    position: relative;
 }
-.featuredWork .gallery .pic .layot .eye{
-    /*background-image: url('../img/elave/zoom.png');
-    background-repeat: no-repeat;*/
-    opacity: 0;
-    font-size: 50px;
-    width: 162.5px ;
-    cursor: pointer;
-    height: 222px;
+.featuredWork .gallery .pic .layot .titleName h1{
     color: white;
+    font-size: 30px;
     position: absolute;
-    left: 0%;
-    padding-left: 45%;
-    transition: all 0.3s ease-in-out;
+    left: 20%;
+    opacity: 0;
+    top: 0;
+    transition: all 0.3s;
+}
+.featuredWork .gallery .pic .layot i{
+    position: absolute;
+    color: #333;
+    opacity: 0;
+    left: 40%;
+    bottom: 0%;
+}
+.featuredWork .gallery .pic .layot i:hover{
+    color: white;
+    cursor: pointer;
 }
 
 .featuredWork .ourteam .teamslider{
-
     width: 1170px;
     overflow: hidden;
     margin: 0 auto;
 }
 .featuredWork .ourteam .team{
-        width: 3000px;
-           position: relative;
-           display: block;
+    width: 7000px;
+    position: relative;
+    display: block;
+    right: 0;
+}
+.featuredWork .aboutus .points i{
+    cursor: pointer;
+    font-size: 20px;
+    background: transparent;
+    border-radius: 100%;
+    width: 20px;
+    margin-right: 15px;
+    
+}
+.featuredWork .aboutus .points i:first-child{
+    background: black;
+}
+.featuredWork .aboutus .contenttext .contenttextss{ 
+    width: 7000px;
+    margin: 0 auto;
+    position: relative;
+    transition: all 800ms ease;
+    right: 0;
+}
+.featuredWork .aboutus .contenttext {
+    width: 1170px;
+    overflow: hidden;
+}
+.featuredWork .aboutus .contenttext .firsttext{
+    width: 1170px;
+    float: left;
+         transition: all 800ms ease;
+}
+.featuredWork .portfolio .photos .layots{
+    background: transparent;
+     width: 390px;;
+    height: 240px;
+    position: absolute;
+    bottom: 210px;
+}
+
+.featuredWork .portfolio .layots i{
+    position: absolute;
+    color: #333;
+    opacity: 0;
+    left: 40%;
+    bottom: 0%; 
+}
+
+.featuredWork .portfolio .layots i:hover{
+    color: white;
+    cursor: pointer;
+}
+.featuredWork .portfolio .photos img{
+    filter: grayscale(0%);
+    opacity: 1;
+    width: 390px;;
+    height: 240px;
+    margin: 0;
+    position: relative;
+}
+/*evez elemek olar*/
+.featuredWork .portfolio .photos .photosecond{
+    margin-right: 20px;
+    height: 400px;
+
+}
+
+/**/
+.featuredWork .portfolio .photos i{
+    position:absolute;
+    bottom: 0;
+    left: 40%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.featuredWork .ourteam .team .imgteam {
+    width: 390px;
+    height: 390px;
+    float: left;
+}
+.featuredWork .ourteam .team .imgteam img{
+    filter: grayscale(0%);
+    opacity: 1;
+    margin-right: 21px;
+    float: left;
+}
+
+.featuredWork .ourteam .team .imgteam .layotteam{
+    width: 370px;
+    height: 370px;
+    background: black;
+    opacity: 0;
+    float: left;
+    margin-right: 21px;
+    position: absolute;
+}
+.featuredWork .ourteam .team .imgteam .layotteam h1{
+    color: white;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    opacity: 0;
+    font-size: 28px;
+}
+.featuredWork .ourteam .team .imgteam .layotteam h5{
+    color: #333;
+    position: absolute;
+    left: 45%;
+    top: 0;    
+    font-size: 18px;
+    transition: all 0.3s;
+    opacity: 0;
+}
+.featuredWork .ourteam .team .imgteam .layotteam i{
+    color: #333;
+    border: 3px solid #333;
+    border-radius: 100%;
+    padding: 20px;
+    margin-right: 10px;
+    float: left;
+    margin-left: 11%;
+    margin-top: 300px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.featuredWork .ourteam .team .imgteam .layotteam i:hover{
+    color: white;
+    border-color: white;
+    transition:  0.3s ease-in;
 }
